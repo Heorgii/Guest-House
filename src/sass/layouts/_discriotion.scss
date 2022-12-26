@@ -6,6 +6,12 @@
 .discr-list {
     display: flex;
     padding: 100px 320px;
+
+    @media screen and (min-width: 768px) and (max-width:1199px){
+        & {
+            padding: 50px 110px;
+        }
+    }
 }
 
 .discr-item {
@@ -21,6 +27,7 @@
     width: 360px;
     height: 180px;
     margin-right: 40px;
+
 }
 
 .discr-item:nth-child(2) {
@@ -44,6 +51,13 @@
     left: 52.08%;
     top: 1139px;
     transition: 250ms ease;
+
+    @media screen and (min-width: 768px) and (max-width:1199px){
+        & {
+            left: 52.08%;
+            top: 1106px;
+        }
+    }
 }
 
 .discr-button:hover,

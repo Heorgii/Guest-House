@@ -64,6 +64,12 @@
     font-size: 14px;
     line-height: 20px;
     color: #333333;
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        & {
+            width: 400px;
+        }
+    }
 }
 
 .item-user {

@@ -27,13 +27,26 @@
 .amenities-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+
+    @media screen and (min-width:1200px) {
+        & {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
 }
 
 .amenities-list__item {
     width: 403px;
     margin-right: 32px;
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        & {
+            width: 220px;
+
+        }
+    }
 }
 
 .amenities-list__item:nth-child(2) {

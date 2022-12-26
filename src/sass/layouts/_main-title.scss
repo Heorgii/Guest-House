@@ -1,5 +1,11 @@
 .main-title {
     padding: 140px 76px;
+
+    @media screen and (min-width: 768px ) and (max-width:1199px)  {
+        & {
+            padding: 90px 46px;
+        }
+    }
 }
 
 .title {
@@ -11,4 +17,10 @@
 
     text-align: center;
     color: var(--main-color);
+
+    @media screen and (min-width: 768px) and (max-width:1199px){
+        & {
+            font-size: 55px;
+        }
+    }
 }

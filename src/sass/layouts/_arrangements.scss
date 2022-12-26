@@ -40,10 +40,22 @@
 .arrang-item {
     width: 346px;
     text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        & {
+            width: 208px;
+        }
+    }
 }
 
 .arrang-item:not(:last-child) {
     margin-right: 64px;
+
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        & {
+            margin-right: 36px;
+        }
+    }
 }
 
 .arrang-item__title {
