@@ -17,7 +17,6 @@
 
 .nav__link {
     text-decoration: none;
-    top: calc(50% - 20px/2);
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -28,7 +27,7 @@
 
 .nav__link:hover,
 .nav__link:focus {
-    background-color: #c2c2c2;
+    color: #c2c2c2;
     transition: all .3s cubic-bezier(.39, .575, .565, 1);
 }
 
