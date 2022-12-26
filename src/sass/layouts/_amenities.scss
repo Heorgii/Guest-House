@@ -1,0 +1,78 @@
+.amenities {
+    padding: 100px 120px;
+}
+
+.amenities-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+
+    color: var(--main-color);
+    margin-bottom: 12px;
+}
+
+.amenities-discr {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--main-color);
+    width: 554px;
+    margin-bottom: 32px;
+}
+
+.amenities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.amenities-list__item {
+    width: 403px;
+    margin-right: 32px;
+    margin-bottom: 32px;
+}
+
+.amenities-list__item:nth-child(2) {
+    margin-right: 0;
+}
+
+.amenities-list__item:nth-child(4) {
+    margin-right: 0;
+}
+
+.amenities-list__item:nth-child(6) {
+    margin-right: 0;
+}
+
+.amenities-list__item:nth-child(7) {
+    margin-bottom: 0;
+
+}
+
+.amenities-list__item:nth-child(8) {
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+.amenities-item__img {
+    width: 36px;
+    height: 36px;
+}
+
+.list-discr__title,
+.list-discr {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--main-color);
+}
+
+.list-discr {
+    color: #333333;
+}

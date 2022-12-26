@@ -1,0 +1,168 @@
+.footer {
+    padding: 100px 136px;
+    background-color: var(--main-color);
+}
+
+.footer-container {
+    margin-bottom: 48px;
+    display: flex;
+}
+
+/* About */
+.about-item:not(:last-child) {
+    margin-bottom: 11px;
+}
+
+.about-item__link {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+/* Social */
+.social {
+    text-align: center;
+    margin-left: 238px;
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social-link {
+    fill: var(--white-color);
+    transition: 250ms ease;
+}
+
+.social-link:hover {
+    fill: #333333;
+    transition: all .3s cubic-bezier(.39, .575, .565, 1);
+}
+
+.social-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+/* <!-- Registration --> */
+
+.register {
+    margin-left: 100px;
+}
+
+.register-title,
+.register-discr {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.register-title {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.register-form {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.form-input {
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    border-color: transparent;
+    width: 180px;
+    height: 30px;
+}
+
+.form-lable {
+    margin-right: 10px;
+}
+
+.form-discr {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.form-discr__link {
+    text-decoration: none;
+    color: rgb(231, 222, 159);
+}
+
+.btn-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.form-button {
+    background-color: var(--bg-color);
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: 250ms ease;
+}
+
+.form-button:hover .form-button:focus {
+    transition: all .3s cubic-bezier(.39, .575, .565, 1);
+    background-color: #ffeb91;
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__logo {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.contact-info:not(:last-child) {
+    margin-bottom: 5px;
+}

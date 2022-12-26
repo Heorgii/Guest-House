@@ -1,2 +1,21 @@
 @import './common';
-@import './example';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/discriotion';
+@import './layouts/main-title';
+@import './layouts/img-section';
+@import './layouts/arrangements';
+@import './layouts/amenities';
+@import './layouts/feedback';
+@import './layouts/img-section-2';
+@import './layouts/come';
+@import './layouts/contacts';
+@import './layouts/footer';
+
+// Utilits
+@import './utilits/variables';
+
+// BASE
+@import './base/base';
+
