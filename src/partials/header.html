@@ -1,5 +1,5 @@
 <header class="header">
-    <div class="container header-container">
+    <div class="container header-container" id="home">
         <a class="nav__logo" href="#">
             <img src="./images/logo.svg" alt="">
         </a>
@@ -12,9 +12,55 @@
             </ul>
         </nav>
 
-        <div class="header__group">
+        <div class="header__button">
             <button type="button" class="header-button">Join / Log in</button>
         </div>
 
+        <button class="mobile-menu__button js-open-menu is-open" aria-expanded="false" aria-controls="mobile-menu"
+            type="button">
+            <svg class="mobile-men__burger-icon" width="25" height="25">
+                <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+        </button>
+
     </div>
 </header>
+
+<!-- !Моб-меню-->
+
+<div class="mobile-menu js-menu-container is-hidden" id="mobile-menu">
+    <button class="mobile-menu__button js-close-menu" type="button">
+
+        <svg class="mmobile-menu__svg another-svg" width="20" height="20">
+            <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+
+    </button>
+
+    <div class="mobile-menu__button-container">
+        <button class="mobile-menu__join-button" type="button">
+            Join / Log in
+        </button>
+    </div>
+
+    <nav class="mob-menu-navigation">
+        <ul class="mob-menu-navigation__list">
+            <li class="mob-menu-navigation__item">
+                <a href="#home" class="mob-menu-navigation__link">Home</a>
+            </li>
+
+            <li class="mob-menu-navigation__item">
+                <a href="#about" class="mob-menu-navigation__link">About us</a>
+            </li>
+
+            <li class="mob-menu-navigation__item">
+                <a href="#feedback" class="mob-menu-navigation__link">Feedback</a>
+            </li>
+
+
+            <li class="mob-menu-navigation__item">
+                <a href="#contacts" class="mob-menu-navigation__link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>
