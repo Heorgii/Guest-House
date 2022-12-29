@@ -16,6 +16,12 @@
     color: var(--main-color);
     width: 533px;
     margin-bottom: 12px;
+
+    @media screen and (max-width: 768px) {
+        & {
+            width: 356px;
+        }
+    }
 }
 
 .contacts-discr {
@@ -28,6 +34,12 @@
     text-align: center;
     color: var(--main-color);
     width: 514px;
+
+    @media screen and (max-width: 768px) {
+        & {
+            width: 350px;
+        }
+    }
 }
 
 .contacts-list {
