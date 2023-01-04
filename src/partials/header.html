@@ -13,7 +13,9 @@
         </nav>
 
         <div class="header__button">
-            <button type="button" class="header-button">Join / Log in</button>
+            <button type="button" class="header-button" data-modal-user-open>
+                Join / Log in
+            </button>
         </div>
 
         <button class="mobile-menu__button js-open-menu is-open" aria-expanded="false" aria-controls="mobile-menu"
@@ -26,6 +28,54 @@
     </div>
 </header>
 
+<!-- Auth -->
+<div class="backdrop-login backdrop is-hidden" data-modal-user>
+    <div class="modal-login">
+        <button class="modal-login-close" data-modal-user-close>
+            <!-- <svg class="close-login-icon" width="20" height="20">
+                <use href="./image/sprite.svg#icon-close"></use>
+            </svg> -->
+            close
+        </button>
+        <p class="modal-login-title modal-title-js">Fill in the form</p>
+        <form class="form-user" autocomplete="on">
+            <label class="form-group" aria-label="email">
+                <span class="form-label">E-mail:</span>
+                <span class="form__wrapper">
+                    <input class="form-input-auth" type="email" name="mail" id="txtEmail" placeholder="exampel@gmail.com"
+                        required />
+                    <!-- <svg class="form-icon" width="18" height="18">
+                        <use href="./image/sprite.svg#mail"></use>
+                    </svg> -->
+                </span>
+            </label>
+            <label class="form-group" aria-label="password">
+                <span class="form-label">Password:</span>
+                <span class="form__wrapper">
+                    <input class="form-input-auth" type="password" name="password" id="txtPassword" minlength="5"
+                        maxlength="12" placeholder="******" required />
+                    <!-- <svg class="form-icon" width="18" height="18">
+                        <use href="./image/sprite.svg#key"></use>
+                    </svg> -->
+                </span>
+            </label>
+        </form>
+        <button class="btn-submit --active-btn" type="submit" id="btnSignup">Sign up</button>
+        <button class="btn-submit" type="submit" id="btnLogin">Log in</button>
+
+        <div id="divLoginError" class="group">
+            <p id="lblLoginErrorMessage" class="errorlabel is-hidden">Error: You are not registered!</p>
+        </div>
+    </div>
+</div>
+
+<div class="backdrop-notification is-hidden" id="backdrop-notification">
+    <div id="app" class="notification ">
+        <p class="succes-title " id="success-enter">Welcome to Your account</p>
+        <p class="succes-exit is-hidden" id="success-exit">Thank you for visiting our site!</p>
+        <button id="btnLogout" type="button" class="btn__logout is-hidden">Log out</button>
+    </div>
+</div>
 <!-- !Моб-меню-->
 
 <div class="mobile-menu js-menu-container is-hidden" id="mobile-menu">
