@@ -217,15 +217,15 @@
     left: 50%;
     transform: translate(-50%, -50%)scale(1);
 
-    // @include mq(tablet) {
-    //     padding: 40px 30px;
-    //     max-width: 350px;
-    // }
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+        padding: 40px 30px;
+        max-width: 350px;
+    }
 
-    // @include mq(desktop) {
-    //     max-width: 400px;
-    //     top: 20%;
-    //     left: 50%;
-    //     transform: translate(-50%, -20%) scale(1);
-    // }
+    @media screen and (min-width:1200px) {
+        max-width: 400px;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -20%) scale(1);
+    }
 }

@@ -5,8 +5,9 @@
 
 .discr-list {
     display: flex;
+    justify-content: center;
     padding: 100px 320px;
-
+    padding: 35px 13px;
     @media screen and (min-width: 768px) and (max-width:1199px) {
         & {
             padding: 50px 110px;
@@ -18,8 +19,6 @@
             padding: 50px -10px;
         }
     }
-
-    padding: 35px 13px;
 }
 
 .discr-item {
@@ -43,6 +42,11 @@
     height: 80px;
 }
 
+.discr-btn-box {
+    display: flex;
+    justify-content: center;
+}
+
 .discr-button {
     font-family: 'Montserrat';
     font-style: normal;
@@ -55,23 +59,7 @@
     background-color: var(--main-color);
     color: var(--white-color);
     cursor: pointer;
-    position: absolute;
-    left: 52.08%;
-    top: 1139px;
     transition: 250ms ease;
-
-    @media screen and (min-width: 768px) and (max-width:1199px) {
-        & {
-            left: 52.08%;
-            top: 1106px;
-        }
-    }
-
-    @media screen and (max-width:768px) {
-        & {
-            top: 1169px;
-        }
-    }
 }
 
 .discr-button:hover,
